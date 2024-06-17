@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>唐詩與它們的產地</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .background-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('背景.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  map {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+</style>
+</head>
+<body>
+<div class="background-image">
+  <img src="背景.jpg" usemap="#map1" alt="唐詩與它們的產地" style="width: 100%; height: auto;">
+  <map name="map1">
+    <area shape="rect" coords="550,400,650,450" href="陽關.html" alt="陽關">
+    <area shape="rect" coords="600,350,700,400" href="玉門關.html" alt="玉門關">
+    <area shape="rect" coords="700,450,800,500" href="涼州.html" alt="涼州">
+    <area shape="rect" coords="900,375,1000,425" href="幽州.html" alt="幽州">
+    <area shape="rect" coords="950,475,1050,525" href="揚州.html" alt="揚州">
+    <area shape="rect" coords="925,550,975,600" href="杭州.html" alt="杭州">
+    <area shape="rect" coords="1000,520,1050,570" href="蘇州.html" alt="蘇州">
+    <area shape="rect" coords="875,500,925,550" href="襄州.html" alt="襄州">
+    <area shape="rect" coords="815,550,865,600" href="荊州.html" alt="荊州">
+    <area shape="rect" coords="765,490,815,540" href="長安.html" alt="長安">
+  </map>
+</div>
+</body>
+</html>
