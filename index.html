@@ -1,48 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<title>唐詩與它們的產地</title>
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唐詩與它們的產地</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-  .background-image {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url('背景.jpg') no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
+        .background-image {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background: url('背景.jpg') no-repeat center center;
+          background-size: cover;
+        }
 
-  map {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-</style>
+        .city-marker {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body>
-<div class="background-image">
-  <img src="背景.jpg" usemap="#map1" alt="唐詩與它們的產地" style="width: 100%; height: auto;">
-  <map name="map1">
-    <area shape="rect" coords="550,400,650,450" href="陽關.html" alt="陽關">
-    <area shape="rect" coords="600,350,700,400" href="玉門關.html" alt="玉門關">
-    <area shape="rect" coords="700,450,800,500" href="涼州.html" alt="涼州">
-    <area shape="rect" coords="900,375,1000,425" href="幽州.html" alt="幽州">
-    <area shape="rect" coords="950,475,1050,525" href="揚州.html" alt="揚州">
-    <area shape="rect" coords="925,550,975,600" href="杭州.html" alt="杭州">
-    <area shape="rect" coords="1000,520,1050,570" href="蘇州.html" alt="蘇州">
-    <area shape="rect" coords="875,500,925,550" href="襄州.html" alt="襄州">
-    <area shape="rect" coords="815,550,865,600" href="荊州.html" alt="荊州">
-    <area shape="rect" coords="765,490,815,540" href="長安.html" alt="長安">
-  </map>
-</div>
+    <div class="map-container">
+      <img src="背景.jpg" usemap="#map1" alt="唐詩與它們的產地" style="width: 100%; height: auto;">
+        <div class="city-marker" style="top: 47%; left: 47%;" onclick="location.href='陽關.html'">陽關</div>
+        <div class="city-marker" style="top: 41%; left: 50%;" onclick="location.href='玉門關.html'">玉門關</div>
+        <div class="city-marker" style="top: 53%; left: 57%;" onclick="location.href='凉州.html'">凉州</div>
+        <div class="city-marker" style="top: 45%; left: 70%;" onclick="location.href='幽州.html'">幽州</div>
+        <div class="city-marker" style="top: 67%; left: 77%;" onclick="location.href='揚州.html'">揚州</div>
+        <div class="city-marker" style="top: 75.5%; left: 77%;" onclick="location.href='杭州.html'">杭州</div>
+        <div class="city-marker" style="top: 70%; left: 80.5%;" onclick="location.href='蘇州.html'">蘇州</div>
+        <div class="city-marker" style="top: 71%; left: 68%;" onclick="location.href='襄州.html'">襄州</div>
+        <div class="city-marker" style="top: 77%; left: 68%;" onclick="location.href='荊州.html'">荊州</div>
+        <div class="city-marker" style="top: 66%; left: 64%;" onclick="location.href='長安.html'">長安</div>
+    </div>
 </body>
 </html>
